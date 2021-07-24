@@ -1,5 +1,5 @@
 # JavascriptAutomation
-This Repo contains practice javascript Automation
+This Repo contains practice javascript tests using Jest and testing Slack's API.
 
 ## Requirements:
 * nodejs: https://nodejs.org/en/
