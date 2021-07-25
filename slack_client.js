@@ -20,14 +20,12 @@ class SlackClient {
 
   send_message(msg){
     const full_url = `${this.base_url}/api/chat.postMessage`
-    console.log(full_url)
 
     let body = query_string['stringify']({
       token: this.token,
       channel: this.config['channel_name'],
       text: `${msg} ${Math.random()}`
     })
-    console.log(body)
 
     const headers = {
       headers: {
@@ -39,14 +37,12 @@ class SlackClient {
 
   delete_message(timestamp){
     const full_url = `${this.base_url}/api/chat.delete`
-    console.log(full_url)
 
     let body = query_string['stringify']({
       token: this.token,
       channel: this.config['channel_id'],
       ts: timestamp
     })
-    console.log(body)
 
     const headers = {
       headers: {
@@ -58,7 +54,6 @@ class SlackClient {
 
   schedule_message(msg, timestamp){
     const full_url = `${this.base_url}/api/chat.scheduleMessage`;
-    console.log(full_url);
     const future_time = new Date().getTime();
 
     let body = query_string['stringify']({
@@ -67,7 +62,6 @@ class SlackClient {
       post_at: timestamp,
       text: `${msg} ${Math.random()}`
     })
-    console.log(body)
 
     const headers = {
       headers: {
