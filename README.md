@@ -5,6 +5,12 @@ This Repo contains practice javascript tests using Jest and testing Slack's API.
 * nodejs: https://nodejs.org/en/
 * slack application (user token) or ask me to use my test token
 
+## Breakdown:
+* slack_client.js: this class help initialize the configs and make the calls to Slack's API
+* slack_config.js: configs that for Slack's API
+* slack_send_messages.test.js: Tests that relates to sending messages
+* slack_delete_messages.test.js: Tests that relates to deleting messages
+
 ## How to run:
 1. Open project.
 2. Install project packages: npm install.
